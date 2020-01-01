@@ -3,7 +3,7 @@
 # 使用装饰器实现单例模式
 
 
-def singleton(cls, *args, **kwargs):
+def singleton(cls):
     """
     单例模版,作为类的装饰器
     """

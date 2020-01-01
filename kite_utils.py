@@ -5,7 +5,7 @@ kite python utils set
 """
 
 
-def singleton(cls, *args, **kwargs):
+def singleton(cls):
     """
     Singleton decorator template, Add @singleton annotation above your class
     """
