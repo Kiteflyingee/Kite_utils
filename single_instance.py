@@ -27,5 +27,9 @@ class Test_singleton:
 
 ts1 = Test_singleton()
 ts2 = Test_singleton()
+# 等价于 a1 = singleton(Test_singleton)
+# 只调用了一次singleton方法，创建了一个绑定变量instance，对于他的闭包来说都是可访问的
+# ts2 = a1()
+# ts1 = a1()
 print(id(ts1))
 print(id(ts2))
