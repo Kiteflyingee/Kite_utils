@@ -18,15 +18,16 @@ def singleton(cls):
 
 @singleton
 class Test_singleton:
-    def __init__(self):
+    def __init__(self, dh):
         self.num = 0
+        print(dh)
 
     def add(self):
         self.num = 99
 
 
-ts1 = Test_singleton()
-ts2 = Test_singleton()
+ts1 = Test_singleton(2)
+ts2 = Test_singleton(5)
 # 等价于 a1 = singleton(Test_singleton)
 # 只调用了一次singleton方法，创建了一个绑定变量instance，对于他的闭包来说都是可访问的
 # ts2 = a1()
